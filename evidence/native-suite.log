@@ -1,0 +1,21 @@
+go: downloading github.com/spf13/viper v1.4.0
+go: downloading github.com/go-openapi/runtime v0.19.4
+go: downloading github.com/go-openapi/strfmt v0.19.4
+go: downloading github.com/segmentio/ksuid v1.0.3
+go: downloading github.com/stretchr/testify v1.5.1
+go: downloading github.com/gorilla/mux v1.7.1
+go: downloading gerrit.o-ran-sc.org/r/ric-plt/sdlgo.git v0.8.0
+go: downloading gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git v0.9.16
+pkg/control/sdl_e2SubsDb.go:28:2: module lookup disabled by GOPROXY=off
+pkg/control/client.go:28:2: gerrit.o-ran-sc.org/r/ric-plt/nodeb-rnib.git/entities@v1.2.8: module lookup disabled by GOPROXY=off
+pkg/control/client.go:29:2: gerrit.o-ran-sc.org/r/ric-plt/nodeb-rnib.git/entities@v1.2.8: module lookup disabled by GOPROXY=off
+pkg/control/client.go:30:2: gerrit.o-ran-sc.org/r/ric-plt/nodeb-rnib.git/entities@v1.2.8: module lookup disabled by GOPROXY=off
+pkg/control/control.go:30:2: module lookup disabled by GOPROXY=off
+pkg/control/control.go:31:2: module lookup disabled by GOPROXY=off
+pkg/control/client.go:31:2: module lookup disabled by GOPROXY=off
+pkg/control/control.go:33:2: module lookup disabled by GOPROXY=off
+pkg/control/control.go:34:2: module lookup disabled by GOPROXY=off
+pkg/control/debug_rest_if.go:24:2: module lookup disabled by GOPROXY=off
+pkg/control/control.go:35:2: module lookup disabled by GOPROXY=off
+pkg/control/control.go:36:2: module lookup disabled by GOPROXY=off
+pkg/teststube2ap/stubE2.go:32:2: module lookup disabled by GOPROXY=off

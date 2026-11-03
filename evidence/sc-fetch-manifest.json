@@ -1,0 +1,218 @@
+[
+  {
+    "branch": "e-release",
+    "commit": "d5c027e9d52c5a1f43304a71cdf84b4c1ccf8024",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/d5c027e9d52c5a1f43304a71cdf84b4c1ccf8024/pkg/control/control.go",
+    "sha256": "257f58daebe96e98458f31456e5af610b04448e23ceca6e3c6abcfe033feeb1f",
+    "status": "retrieved"
+  },
+  {
+    "branch": "e-release",
+    "commit": "d5c027e9d52c5a1f43304a71cdf84b4c1ccf8024",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/d5c027e9d52c5a1f43304a71cdf84b4c1ccf8024/pkg/control/registry.go",
+    "sha256": "a91ad9bfa400792f20abe81ce35082e07a783a1cb1f898eecb9ee32744d71774",
+    "status": "retrieved"
+  },
+  {
+    "branch": "e-release",
+    "commit": "d5c027e9d52c5a1f43304a71cdf84b4c1ccf8024",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/d5c027e9d52c5a1f43304a71cdf84b4c1ccf8024/container-tag.yaml",
+    "sha256": "5fe58867d9d1b4073df4f9038483d9fc273afb7f4dacd5364674fcbca15982ba",
+    "status": "retrieved"
+  },
+  {
+    "branch": "f-release",
+    "commit": "2a08dd799ad0de2ec84f7dd32ef5a1c3974e2575",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/2a08dd799ad0de2ec84f7dd32ef5a1c3974e2575/pkg/control/control.go",
+    "sha256": "7a8fb1b4988af7cf6e2cc03c4956412ca7435601c053ddace9d960a25c3303f2",
+    "status": "retrieved"
+  },
+  {
+    "branch": "f-release",
+    "commit": "2a08dd799ad0de2ec84f7dd32ef5a1c3974e2575",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/2a08dd799ad0de2ec84f7dd32ef5a1c3974e2575/pkg/control/registry.go",
+    "sha256": "2cf07f5383f7f4263bf5c041480060703c8a5206ed4c8ee9e63c1bfa341a03f6",
+    "status": "retrieved"
+  },
+  {
+    "branch": "f-release",
+    "commit": "2a08dd799ad0de2ec84f7dd32ef5a1c3974e2575",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/2a08dd799ad0de2ec84f7dd32ef5a1c3974e2575/container-tag.yaml",
+    "sha256": "c32ccc6cad37d167a897a491c0b678cc098fb6eae383ff4618a97ccb3b7d0491",
+    "status": "retrieved"
+  },
+  {
+    "branch": "g-release",
+    "commit": "1c54904eabebcae865d597b8ed34633482963093",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/1c54904eabebcae865d597b8ed34633482963093/pkg/control/control.go",
+    "sha256": "16e4a5a820bed740b96e72c16b76dc85b08c49cb4ee8b85f7d75bc9efb271f04",
+    "status": "retrieved"
+  },
+  {
+    "branch": "g-release",
+    "commit": "1c54904eabebcae865d597b8ed34633482963093",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/1c54904eabebcae865d597b8ed34633482963093/pkg/control/registry.go",
+    "sha256": "fa620c8fd24197e0570f78c1f5346b03e33a13830c5887c25e316aefc8eb3794",
+    "status": "retrieved"
+  },
+  {
+    "branch": "g-release",
+    "commit": "1c54904eabebcae865d597b8ed34633482963093",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/1c54904eabebcae865d597b8ed34633482963093/container-tag.yaml",
+    "sha256": "d1bb98f680d370b15063306627b8f7491cc77a95e891a4d08eaa364dcf838be0",
+    "status": "retrieved"
+  },
+  {
+    "branch": "h-release",
+    "commit": "ad93392cb6c1180d9f4828baea4f5427c3163d4e",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ad93392cb6c1180d9f4828baea4f5427c3163d4e/pkg/control/control.go",
+    "sha256": "0563a27ea1bebd0f6f61cc15cab65918fe8080695effa8157f8ae995a6d1f7fa",
+    "status": "retrieved"
+  },
+  {
+    "branch": "h-release",
+    "commit": "ad93392cb6c1180d9f4828baea4f5427c3163d4e",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ad93392cb6c1180d9f4828baea4f5427c3163d4e/pkg/control/registry.go",
+    "sha256": "fa620c8fd24197e0570f78c1f5346b03e33a13830c5887c25e316aefc8eb3794",
+    "status": "retrieved"
+  },
+  {
+    "branch": "h-release",
+    "commit": "ad93392cb6c1180d9f4828baea4f5427c3163d4e",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ad93392cb6c1180d9f4828baea4f5427c3163d4e/container-tag.yaml",
+    "sha256": "0a5f05a6970774e4d7c3da8f8946e94e7b5c7c8354bc28ea7713d392aec5887e",
+    "status": "retrieved"
+  },
+  {
+    "branch": "i-release",
+    "commit": "956bb478233a4467393a4f3f67f4b4c04544a736",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/956bb478233a4467393a4f3f67f4b4c04544a736/pkg/control/control.go",
+    "sha256": "905aabb4762acc48cec073d59a230834cf79cae05bfb40be7d545ac7d7c96011",
+    "status": "retrieved"
+  },
+  {
+    "branch": "i-release",
+    "commit": "956bb478233a4467393a4f3f67f4b4c04544a736",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/956bb478233a4467393a4f3f67f4b4c04544a736/pkg/control/registry.go",
+    "sha256": "fa620c8fd24197e0570f78c1f5346b03e33a13830c5887c25e316aefc8eb3794",
+    "status": "retrieved"
+  },
+  {
+    "branch": "i-release",
+    "commit": "956bb478233a4467393a4f3f67f4b4c04544a736",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/956bb478233a4467393a4f3f67f4b4c04544a736/container-tag.yaml",
+    "sha256": "4b55c33627ba51a9594e42b715baf8b30b292c0637f7bac10ad3fc8e458a2190",
+    "status": "retrieved"
+  },
+  {
+    "branch": "j-release",
+    "commit": "ff822852aa2d4a81b5b6da18111f55a9b315603e",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ff822852aa2d4a81b5b6da18111f55a9b315603e/pkg/control/control.go",
+    "sha256": "905aabb4762acc48cec073d59a230834cf79cae05bfb40be7d545ac7d7c96011",
+    "status": "retrieved"
+  },
+  {
+    "branch": "j-release",
+    "commit": "ff822852aa2d4a81b5b6da18111f55a9b315603e",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ff822852aa2d4a81b5b6da18111f55a9b315603e/pkg/control/registry.go",
+    "sha256": "fa620c8fd24197e0570f78c1f5346b03e33a13830c5887c25e316aefc8eb3794",
+    "status": "retrieved"
+  },
+  {
+    "branch": "j-release",
+    "commit": "ff822852aa2d4a81b5b6da18111f55a9b315603e",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ff822852aa2d4a81b5b6da18111f55a9b315603e/container-tag.yaml",
+    "sha256": "820abaa66f32089655bc4990cc0d591aa1c781737938022067880f763595c592",
+    "status": "retrieved"
+  },
+  {
+    "branch": "l-release",
+    "commit": "ff822852aa2d4a81b5b6da18111f55a9b315603e",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ff822852aa2d4a81b5b6da18111f55a9b315603e/pkg/control/control.go",
+    "sha256": "905aabb4762acc48cec073d59a230834cf79cae05bfb40be7d545ac7d7c96011",
+    "status": "retrieved"
+  },
+  {
+    "branch": "l-release",
+    "commit": "ff822852aa2d4a81b5b6da18111f55a9b315603e",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ff822852aa2d4a81b5b6da18111f55a9b315603e/pkg/control/registry.go",
+    "sha256": "fa620c8fd24197e0570f78c1f5346b03e33a13830c5887c25e316aefc8eb3794",
+    "status": "retrieved"
+  },
+  {
+    "branch": "l-release",
+    "commit": "ff822852aa2d4a81b5b6da18111f55a9b315603e",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/ff822852aa2d4a81b5b6da18111f55a9b315603e/container-tag.yaml",
+    "sha256": "820abaa66f32089655bc4990cc0d591aa1c781737938022067880f763595c592",
+    "status": "retrieved"
+  },
+  {
+    "branch": "m-release",
+    "commit": "191c81a6c587cde692345b50da94e7cdae8c56d8",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/191c81a6c587cde692345b50da94e7cdae8c56d8/pkg/control/control.go",
+    "sha256": "cfe27e56cf7fd08233596fa84851a62bfbf62c3ea9ae3a779a1ad13822574004",
+    "status": "retrieved"
+  },
+  {
+    "branch": "m-release",
+    "commit": "191c81a6c587cde692345b50da94e7cdae8c56d8",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/191c81a6c587cde692345b50da94e7cdae8c56d8/pkg/control/registry.go",
+    "sha256": "fa620c8fd24197e0570f78c1f5346b03e33a13830c5887c25e316aefc8eb3794",
+    "status": "retrieved"
+  },
+  {
+    "branch": "m-release",
+    "commit": "191c81a6c587cde692345b50da94e7cdae8c56d8",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/191c81a6c587cde692345b50da94e7cdae8c56d8/container-tag.yaml",
+    "sha256": "25c756dc4844bbf9015cb779a4c75827380948d0dba41865e7c716e388675aa2",
+    "status": "retrieved"
+  },
+  {
+    "branch": "master",
+    "commit": "98ebf666e797ee02a7b2946742ebcc4259252b4c",
+    "path": "pkg/control/control.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/98ebf666e797ee02a7b2946742ebcc4259252b4c/pkg/control/control.go",
+    "sha256": "cfe27e56cf7fd08233596fa84851a62bfbf62c3ea9ae3a779a1ad13822574004",
+    "status": "retrieved"
+  },
+  {
+    "branch": "master",
+    "commit": "98ebf666e797ee02a7b2946742ebcc4259252b4c",
+    "path": "pkg/control/registry.go",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/98ebf666e797ee02a7b2946742ebcc4259252b4c/pkg/control/registry.go",
+    "sha256": "fa620c8fd24197e0570f78c1f5346b03e33a13830c5887c25e316aefc8eb3794",
+    "status": "retrieved"
+  },
+  {
+    "branch": "master",
+    "commit": "98ebf666e797ee02a7b2946742ebcc4259252b4c",
+    "path": "container-tag.yaml",
+    "url": "https://raw.githubusercontent.com/o-ran-sc/ric-plt-submgr/98ebf666e797ee02a7b2946742ebcc4259252b4c/container-tag.yaml",
+    "sha256": "d8cf6bdb450d44457a93efd8dd7425fe5f1338c0b8784774336f3c80d63a331e",
+    "status": "retrieved"
+  }
+]

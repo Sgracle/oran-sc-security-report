@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "passed": 9,
+    "failed": 11,
+    "exit_code": 1,
+    "expected": [
+      9,
+      11,
+      1
+    ],
+    "matches_expected": true
+  },
+  "fixed": {
+    "passed": 29,
+    "failed": 0,
+    "exit_code": 0,
+    "expected": [
+      29,
+      0,
+      0
+    ],
+    "matches_expected": true
+  }
+}

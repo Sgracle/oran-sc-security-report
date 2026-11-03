@@ -1,0 +1,308 @@
+[
+  {
+    "branch": "e-release",
+    "commit": "d5c027e9d52c5a1f43304a71cdf84b4c1ccf8024",
+    "source_container_tag": "0.8.2",
+    "required_dispatch_present": false,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": null,
+      "SendSubscriptionDeleteReq": {
+        "line": 1524,
+        "sha256": "ec095f2b157549713288a4206d312512330ad4109709b5509b56f2f4eab2ed8e"
+      },
+      "SendSubscriptionDeleteReqToE2T": null,
+      "handleSubscriptionDelete": {
+        "line": 1176,
+        "sha256": "ab2f4fb756a04b437e1f0a87b10cafe577e724ddcae93729c651c49f22224439"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1264,
+        "sha256": "c4d889f6a34ed15bebfd3fa984d9d6fb199795f8b1478b3bdc725f1bbcd70a25"
+      },
+      "rmrSendToE2T": {
+        "line": 887,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 487,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  },
+  {
+    "branch": "f-release",
+    "commit": "2a08dd799ad0de2ec84f7dd32ef5a1c3974e2575",
+    "source_container_tag": "0.9.3",
+    "required_dispatch_present": false,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": null,
+      "SendSubscriptionDeleteReq": {
+        "line": 1483,
+        "sha256": "ec095f2b157549713288a4206d312512330ad4109709b5509b56f2f4eab2ed8e"
+      },
+      "SendSubscriptionDeleteReqToE2T": null,
+      "handleSubscriptionDelete": {
+        "line": 1136,
+        "sha256": "981853f3b1ce0335e9c3a1ca34955d1d904019c63a5dc380e6d393ad062305e9"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1223,
+        "sha256": "c4d889f6a34ed15bebfd3fa984d9d6fb199795f8b1478b3bdc725f1bbcd70a25"
+      },
+      "rmrSendToE2T": {
+        "line": 852,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 601,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  },
+  {
+    "branch": "g-release",
+    "commit": "1c54904eabebcae865d597b8ed34633482963093",
+    "source_container_tag": "0.9.5",
+    "required_dispatch_present": false,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": null,
+      "SendSubscriptionDeleteReq": {
+        "line": 1524,
+        "sha256": "ec095f2b157549713288a4206d312512330ad4109709b5509b56f2f4eab2ed8e"
+      },
+      "SendSubscriptionDeleteReqToE2T": null,
+      "handleSubscriptionDelete": {
+        "line": 1170,
+        "sha256": "981853f3b1ce0335e9c3a1ca34955d1d904019c63a5dc380e6d393ad062305e9"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1261,
+        "sha256": "4ad0eb35cf0de75ad7cae9696178133109baa578ab4b0d4d5e5cdce8017b63e8"
+      },
+      "rmrSendToE2T": {
+        "line": 877,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 606,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  },
+  {
+    "branch": "h-release",
+    "commit": "ad93392cb6c1180d9f4828baea4f5427c3163d4e",
+    "source_container_tag": "0.9.6",
+    "required_dispatch_present": true,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": {
+        "line": 1644,
+        "sha256": "ed86f38546ca1e727a67e9c63fe88c358e7e4e149d432d25be34ba39f63a6a46"
+      },
+      "SendSubscriptionDeleteReq": {
+        "line": 1530,
+        "sha256": "283f29c86f66a902f651670ae3c9ffc4f3c84d2bf4e6a7c272a6d92177936c6a"
+      },
+      "SendSubscriptionDeleteReqToE2T": {
+        "line": 1682,
+        "sha256": "97b8a73267b76f2c4cb4f7b8fc60f31f885cb4a4ea6d71cc3db2b273bc31b61e"
+      },
+      "handleSubscriptionDelete": {
+        "line": 1176,
+        "sha256": "981853f3b1ce0335e9c3a1ca34955d1d904019c63a5dc380e6d393ad062305e9"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1267,
+        "sha256": "4ad0eb35cf0de75ad7cae9696178133109baa578ab4b0d4d5e5cdce8017b63e8"
+      },
+      "rmrSendToE2T": {
+        "line": 881,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 606,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  },
+  {
+    "branch": "i-release",
+    "commit": "956bb478233a4467393a4f3f67f4b4c04544a736",
+    "source_container_tag": "0.10.1",
+    "required_dispatch_present": true,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": {
+        "line": 1663,
+        "sha256": "ed86f38546ca1e727a67e9c63fe88c358e7e4e149d432d25be34ba39f63a6a46"
+      },
+      "SendSubscriptionDeleteReq": {
+        "line": 1549,
+        "sha256": "283f29c86f66a902f651670ae3c9ffc4f3c84d2bf4e6a7c272a6d92177936c6a"
+      },
+      "SendSubscriptionDeleteReqToE2T": {
+        "line": 1701,
+        "sha256": "97b8a73267b76f2c4cb4f7b8fc60f31f885cb4a4ea6d71cc3db2b273bc31b61e"
+      },
+      "handleSubscriptionDelete": {
+        "line": 1195,
+        "sha256": "981853f3b1ce0335e9c3a1ca34955d1d904019c63a5dc380e6d393ad062305e9"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1286,
+        "sha256": "4ad0eb35cf0de75ad7cae9696178133109baa578ab4b0d4d5e5cdce8017b63e8"
+      },
+      "rmrSendToE2T": {
+        "line": 891,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 606,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  },
+  {
+    "branch": "j-release",
+    "commit": "ff822852aa2d4a81b5b6da18111f55a9b315603e",
+    "source_container_tag": "0.10.2",
+    "required_dispatch_present": true,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": {
+        "line": 1663,
+        "sha256": "ed86f38546ca1e727a67e9c63fe88c358e7e4e149d432d25be34ba39f63a6a46"
+      },
+      "SendSubscriptionDeleteReq": {
+        "line": 1549,
+        "sha256": "283f29c86f66a902f651670ae3c9ffc4f3c84d2bf4e6a7c272a6d92177936c6a"
+      },
+      "SendSubscriptionDeleteReqToE2T": {
+        "line": 1701,
+        "sha256": "97b8a73267b76f2c4cb4f7b8fc60f31f885cb4a4ea6d71cc3db2b273bc31b61e"
+      },
+      "handleSubscriptionDelete": {
+        "line": 1195,
+        "sha256": "981853f3b1ce0335e9c3a1ca34955d1d904019c63a5dc380e6d393ad062305e9"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1286,
+        "sha256": "4ad0eb35cf0de75ad7cae9696178133109baa578ab4b0d4d5e5cdce8017b63e8"
+      },
+      "rmrSendToE2T": {
+        "line": 891,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 606,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  },
+  {
+    "branch": "l-release",
+    "commit": "ff822852aa2d4a81b5b6da18111f55a9b315603e",
+    "source_container_tag": "0.10.2",
+    "required_dispatch_present": true,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": {
+        "line": 1663,
+        "sha256": "ed86f38546ca1e727a67e9c63fe88c358e7e4e149d432d25be34ba39f63a6a46"
+      },
+      "SendSubscriptionDeleteReq": {
+        "line": 1549,
+        "sha256": "283f29c86f66a902f651670ae3c9ffc4f3c84d2bf4e6a7c272a6d92177936c6a"
+      },
+      "SendSubscriptionDeleteReqToE2T": {
+        "line": 1701,
+        "sha256": "97b8a73267b76f2c4cb4f7b8fc60f31f885cb4a4ea6d71cc3db2b273bc31b61e"
+      },
+      "handleSubscriptionDelete": {
+        "line": 1195,
+        "sha256": "981853f3b1ce0335e9c3a1ca34955d1d904019c63a5dc380e6d393ad062305e9"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1286,
+        "sha256": "4ad0eb35cf0de75ad7cae9696178133109baa578ab4b0d4d5e5cdce8017b63e8"
+      },
+      "rmrSendToE2T": {
+        "line": 891,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 606,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  },
+  {
+    "branch": "m-release",
+    "commit": "191c81a6c587cde692345b50da94e7cdae8c56d8",
+    "source_container_tag": "0.10.3",
+    "required_dispatch_present": true,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": {
+        "line": 1686,
+        "sha256": "ed86f38546ca1e727a67e9c63fe88c358e7e4e149d432d25be34ba39f63a6a46"
+      },
+      "SendSubscriptionDeleteReq": {
+        "line": 1572,
+        "sha256": "283f29c86f66a902f651670ae3c9ffc4f3c84d2bf4e6a7c272a6d92177936c6a"
+      },
+      "SendSubscriptionDeleteReqToE2T": {
+        "line": 1724,
+        "sha256": "97b8a73267b76f2c4cb4f7b8fc60f31f885cb4a4ea6d71cc3db2b273bc31b61e"
+      },
+      "handleSubscriptionDelete": {
+        "line": 1218,
+        "sha256": "981853f3b1ce0335e9c3a1ca34955d1d904019c63a5dc380e6d393ad062305e9"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1309,
+        "sha256": "4ad0eb35cf0de75ad7cae9696178133109baa578ab4b0d4d5e5cdce8017b63e8"
+      },
+      "rmrSendToE2T": {
+        "line": 914,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 606,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  },
+  {
+    "branch": "master",
+    "commit": "98ebf666e797ee02a7b2946742ebcc4259252b4c",
+    "source_container_tag": "0.10.4",
+    "required_dispatch_present": true,
+    "functions": {
+      "handleE2TSubscriptionDeleteRequired": {
+        "line": 1686,
+        "sha256": "ed86f38546ca1e727a67e9c63fe88c358e7e4e149d432d25be34ba39f63a6a46"
+      },
+      "SendSubscriptionDeleteReq": {
+        "line": 1572,
+        "sha256": "283f29c86f66a902f651670ae3c9ffc4f3c84d2bf4e6a7c272a6d92177936c6a"
+      },
+      "SendSubscriptionDeleteReqToE2T": {
+        "line": 1724,
+        "sha256": "97b8a73267b76f2c4cb4f7b8fc60f31f885cb4a4ea6d71cc3db2b273bc31b61e"
+      },
+      "handleSubscriptionDelete": {
+        "line": 1218,
+        "sha256": "981853f3b1ce0335e9c3a1ca34955d1d904019c63a5dc380e6d393ad062305e9"
+      },
+      "sendE2TSubscriptionDeleteRequest": {
+        "line": 1309,
+        "sha256": "4ad0eb35cf0de75ad7cae9696178133109baa578ab4b0d4d5e5cdce8017b63e8"
+      },
+      "rmrSendToE2T": {
+        "line": 914,
+        "sha256": "f2462b069c750215e0002866baa4c5eca7376857f6838f204f558400925b89b0"
+      },
+      "GetSubscriptionFirstMatch": {
+        "line": 606,
+        "sha256": "202fce843163690e55bf791c06aa000a9aacf849d92890a0a36a31a39b3a73ea"
+      }
+    }
+  }
+]

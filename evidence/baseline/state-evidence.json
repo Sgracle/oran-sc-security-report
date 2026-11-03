@@ -1,0 +1,950 @@
+[
+  {
+    "after": {
+      "101": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "A",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "before": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      101
+    ],
+    "outputs": [
+      {
+        "Target": "A",
+        "Instance": 101,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:101"
+    ],
+    "scenario": "TestOwnership/A_own"
+  },
+  {
+    "after": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestOwnership/A_references_B"
+  },
+  {
+    "after": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestOwnership/B_own"
+  },
+  {
+    "after": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "before": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": null,
+    "outputs": null,
+    "route_calls": null,
+    "scenario": "TestOwnership/unknown_instance"
+  },
+  {
+    "after": {
+      "101": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "A",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "before": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      101
+    ],
+    "outputs": [
+      {
+        "Target": "A",
+        "Instance": 101,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:101"
+    ],
+    "scenario": "TestOwnership/B_references_A"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestIdentityValidation/wrong_requestor"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestIdentityValidation/wrong_function"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestIdentityValidation/empty_source"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestIdentityValidation/nil_source"
+  },
+  {
+    "after": {
+      "101": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "A",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      },
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102,
+      101
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      },
+      {
+        "Target": "A",
+        "Instance": 101,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102",
+      "delete:101"
+    ],
+    "scenario": "TestMixedBatch"
+  },
+  {
+    "after": {
+      "101": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "A",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      },
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102,
+      101
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      },
+      {
+        "Target": "A",
+        "Instance": 101,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102",
+      "delete:101"
+    ],
+    "scenario": "TestConcurrentDifferentSubscriptions"
+  },
+  {
+    "after": {
+      "101": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "A",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      },
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "101": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "A",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "A",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      },
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102,
+      101
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      },
+      {
+        "Target": "A",
+        "Instance": 101,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102",
+      "delete:101"
+    ],
+    "scenario": "TestConcurrentForeignAndOwn"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestCleanupDoesNotRequireRemoteSuccess/failure"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "",
+        "RouteEndpoints": 0,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestCleanupDoesNotRequireRemoteSuccess/timeout"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": false,
+        "Valid": false,
+        "RemoteActive": false,
+        "Owner": "B",
+        "Endpoints": 0,
+        "OngoingDelete": 0,
+        "DeleteFromDb": true,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 1
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": [
+      102
+    ],
+    "outputs": [
+      {
+        "Target": "B",
+        "Instance": 102,
+        "Requestor": 123,
+        "Function": 2
+      }
+    ],
+    "route_calls": [
+      "delete:102"
+    ],
+    "scenario": "TestCleanupFailureCharacterization"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 0,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": null,
+    "outputs": null,
+    "route_calls": null,
+    "scenario": "TestRejectedMalformedOrOngoing/malformed_payload"
+  },
+  {
+    "after": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 1,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "before": {
+      "102": {
+        "Present": true,
+        "Valid": true,
+        "RemoteActive": true,
+        "Owner": "B",
+        "Endpoints": 1,
+        "OngoingDelete": 1,
+        "DeleteFromDb": false,
+        "DBOwner": "B",
+        "RouteEndpoints": 1,
+        "Recycled": 0
+      }
+    },
+    "db_remove_calls": null,
+    "outputs": null,
+    "route_calls": null,
+    "scenario": "TestRejectedMalformedOrOngoing/ongoing_delete"
+  }
+]

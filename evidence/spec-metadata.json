@@ -1,0 +1,61 @@
+[
+  {
+    "source": "<original-workspace>/tmp\\e2-audit-research\\e2term\\flexric\\src\\lib\\e2ap\\v2_03\\ie\\e2ap_v2_03.pdf",
+    "sha256": "c61bdd189bd005b7ac035a323710936858e0a5935f660f824ccf52073bc2b37e",
+    "pages": 97,
+    "extracted": "e2ap_v2_03.txt",
+    "url": null,
+    "metadata": {
+      "/Author": "ORAN WG3",
+      "/Creator": "Writer",
+      "/Producer": "LibreOffice 7.3",
+      "/CreationDate": "D:20230622092928+02'00'"
+    }
+  },
+  {
+    "source": "<original-workspace>/tmp\\e2-audit-research\\e2term\\flexric\\src\\lib\\e2ap\\v3_01\\ie\\e2ap_v3_01.pdf",
+    "sha256": "4bae31935945b358fe3cca1eb028c160b3da92a5f3461b21f48283a100f7563b",
+    "pages": 115,
+    "extracted": "e2ap_v3_01.txt",
+    "url": null,
+    "metadata": {
+      "/Author": "ORAN WG3",
+      "/Creator": "Writer",
+      "/Producer": "LibreOffice 7.3",
+      "/CreationDate": "D:20230622100116+02'00'"
+    }
+  },
+  {
+    "source": "<original-workspace>/oran-lab\\security-experiments\\cross-e2-delete-required\\standards-review-2026-10-26\\ts_104039v040000p.pdf",
+    "sha256": "03a20214920bba7dba5d2237e976e7501d81c895afcdf3081b3a1b0067ba2a55",
+    "pages": 109,
+    "extracted": "ts_104039v040000p.txt",
+    "url": "https://www.etsi.org/deliver/etsi_ts/104000_104099/104039/04.00.00_60/ts_104039v040000p.pdf",
+    "metadata": {
+      "/Author": "MSG",
+      "/CreationDate": "D:20241004081944+02'00'",
+      "/Creator": "ETSI Secretariat",
+      "/Keywords": "application, interface, PAS, protocol",
+      "/ModDate": "D:20241004150836+02'00'",
+      "/Producer": "Acrobat Distiller 10.0.0 (Windows)",
+      "/Subject": "TS 104 039 - V4.0.0",
+      "/Title": "TS 104 039 - V4.0.0 - Publicly Available Specification (PAS); E2 interface: Application Protocol (O-RAN.WG3.E2AP-R003-v04.00)"
+    }
+  },
+  {
+    "source": "<original-workspace>/tmp\\e2-audit-research\\standards\\O-RAN.WG3.E2AP-R003-v05.00.docx",
+    "sha256": "d62ab8e26223e1846c2e019f7ef4493973b7b09f4147908e491d044d2a0d515e",
+    "extracted": "O-RAN.WG3.E2AP-R003-v05.00-verified.txt",
+    "core_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:title>O-RAN WG3 E2AP</dc:title><dc:subject></dc:subject><dc:creator></dc:creator><cp:keywords>V04.00</cp:keywords><dc:description></dc:description><cp:lastModifiedBy></cp:lastModifiedBy><cp:revision>1</cp:revision><dcterms:created xsi:type=\"dcterms:W3CDTF\">2023-11-21T13:16:00Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2023-11-21T13:18:00Z</dcterms:modified><cp:category></cp:category><cp:contentStatus></cp:contentStatus></cp:coreProperties>",
+    "has_node_scoped_request_id": true,
+    "has_delete_required_local_scope": true
+  },
+  {
+    "source": "<original-workspace>/tmp\\e2-audit-research\\standards\\O-RAN.WG3.TS.E2AP-R005-v09.00.docx",
+    "sha256": "96ea03d78e223ca72f816b75db4b8b55b71f3cd224216f0ed3fa49c4f788f679",
+    "extracted": "O-RAN.WG3.TS.E2AP-R005-v09.00-verified.txt",
+    "core_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:title>O-RAN.WG3.TS.E2AP-R005-v09.00</dc:title><dc:subject></dc:subject><dc:creator>Rapporteur</dc:creator><cp:keywords></cp:keywords><dc:description></dc:description><cp:lastModifiedBy>Jaemin Han</cp:lastModifiedBy><cp:revision>6</cp:revision><cp:lastPrinted>2026-07-20T17:25:00Z</cp:lastPrinted><dcterms:created xsi:type=\"dcterms:W3CDTF\">2026-07-09T23:01:00Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2026-07-20T17:26:00Z</dcterms:modified><cp:category></cp:category></cp:coreProperties>",
+    "has_node_scoped_request_id": true,
+    "has_delete_required_local_scope": true
+  }
+]

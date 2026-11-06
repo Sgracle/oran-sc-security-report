@@ -27,7 +27,7 @@
 
 ## 复现
 
-测试源码与命令见 [验证实验记录](../crash-validation-20261106.md)。核心：真实 e2mgr 源码树内 `go test ./handlers/rmrmsghandlers/ -run TestMgr01 -v -vet=off`（测试文件 `crash_mgr01_test.go` 直接调用生产函数）。
+测试源码 `crash_mgr01_test.go` 与完整复现记录（命令、原始输出）见本目录 [REPRODUCTION.md](REPRODUCTION.md)。
 
 ## 修复建议
 

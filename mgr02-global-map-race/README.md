@@ -28,7 +28,7 @@ e2mgr 的通知管理器对每条通知启动独立 goroutine，E2 Setup / Servi
 
 ## 复现
 
-测试源码与命令见 [验证实验记录](../crash-validation-20261106.md)。核心：真实 e2mgr 源码树内 `go test ./handlers/rmrmsghandlers/ -run TestMgr02 -v -race -vet=off`（测试文件 `crash_mgr02_test.go`，写方走生产 `UpdateProcedureType`、读方走生产 `HandleBasedOnProcedureType`）。
+测试源码 `crash_mgr02_test.go` 与完整复现记录（命令、race 报告与原生 fatal error 原始输出）见本目录 [REPRODUCTION.md](REPRODUCTION.md)。
 
 ## 修复建议
 

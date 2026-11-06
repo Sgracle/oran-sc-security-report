@@ -75,13 +75,20 @@ submgr/
   LICENSES/                             保留的原始许可说明
   BUNDLE-MANIFEST.json                  原始 Submgr 文件哈希
   COORDINATION.md / PROVENANCE.md        协调与来源
-du04-pending-slot-oob/README.md          o-du-l2 订阅待响应槽位越界写
-du03-failure-response-leak/README.md     o-du-l2 失败响应清理误用分配宏
-mgr01-config-update-panic/README.md      e2mgr 配置更新索引越界 panic
-mgr02-global-map-race/README.md          e2mgr 全局 map 同步失效
-sub01-state-map-race/README.md           submgr 状态回调并发 map 读写
-sub02-registry-lock-bypass/README.md     submgr 断连清理绕过注册表锁
-sub03-test-exit-route/README.md          submgr 生产暴露测试退出入口
+du04-pending-slot-oob/                   o-du-l2 订阅待响应槽位越界写
+  README.md REPRODUCTION.md du04_oob_test.c
+du03-failure-response-leak/              o-du-l2 失败响应清理误用分配宏
+  README.md REPRODUCTION.md du03_leak_test.c
+mgr01-config-update-panic/               e2mgr 配置更新索引越界 panic
+  README.md REPRODUCTION.md crash_mgr01_test.go
+mgr02-global-map-race/                   e2mgr 全局 map 同步失效
+  README.md REPRODUCTION.md crash_mgr02_test.go
+sub01-state-map-race/                    submgr 状态回调并发 map 读写
+  README.md REPRODUCTION.md crash_sub01_isolated_test.go crash_sub01_test.go
+sub02-registry-lock-bypass/              submgr 断连清理绕过注册表锁
+  README.md REPRODUCTION.md crash_sub02_test.go
+sub03-test-exit-route/                   submgr 生产暴露测试退出入口
+  README.md REPRODUCTION.md crash_sub03_test.go
 crash-validation-20261106.md             Crash Validation 根级报告（CVE 说明 + 复现记录）
 REORGANIZATION.md                        路径迁移及证据完整性说明
 ```

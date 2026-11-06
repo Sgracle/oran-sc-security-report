@@ -32,7 +32,7 @@ memset(&ranFuncDb->pendingSubsRspInfo[ranFuncDb->numPendingSubsRsp],
 
 ## 复现
 
-测试源码与命令见 [验证实验记录](../crash-validation-20261106.md)。核心：复刻生产控制流的隔离 C 程序（`du-test/du04_oob_test.c`），plain / ASan 双构建。
+测试源码 `du04_oob_test.c` 与完整复现记录（构建命令、原始输出）见本目录 [REPRODUCTION.md](REPRODUCTION.md)。
 
 ## 修复建议
 

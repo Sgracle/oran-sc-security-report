@@ -22,7 +22,7 @@
 
 ## 复现
 
-测试源码与命令见 [验证实验记录](../crash-validation-20261106.md)。核心：真实 submgr 源码树内 `go test -race`（测试文件 `crash_*_test.go`，并发驱动生产 `NotificationCb` 写路径与状态读路径）。
+测试源码 `crash_sub01_isolated_test.go`（隔离版）与 `crash_sub01_test.go`（harness 版）及完整复现记录见本目录 [REPRODUCTION.md](REPRODUCTION.md)。
 
 ## 修复建议
 

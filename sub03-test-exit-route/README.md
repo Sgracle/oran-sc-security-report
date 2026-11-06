@@ -24,7 +24,7 @@
 
 ## 复现
 
-测试源码与命令见 [验证实验记录](../crash-validation-20261106.md)。
+测试源码 `crash_sub03_test.go` 与完整复现记录（命令、退出行为观察、影响边界）见本目录 [REPRODUCTION.md](REPRODUCTION.md)。
 
 ## 修复建议
 

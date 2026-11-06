@@ -25,7 +25,7 @@
 
 ## 复现
 
-测试源码与命令见 [验证实验记录](../crash-validation-20261106.md)。核心：复刻生产函数体与宏的隔离 C 程序（`du-test/du03_leak_test.c`），用计数内存池替代 `SGetSBuf/SPutSBuf`。
+测试源码 `du03_leak_test.c` 与完整复现记录（构建命令、原始输出）见本目录 [REPRODUCTION.md](REPRODUCTION.md)。
 
 ## 修复建议
 

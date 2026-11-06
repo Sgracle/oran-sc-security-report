@@ -24,7 +24,7 @@ race 报告：registry.go:630（无锁遍历 `r.register`）vs 651/652（无锁 
 
 ## 复现
 
-测试源码与命令见 [验证实验记录](../crash-validation-20261106.md)。核心：真实 submgr 源码树内 `go test -race`（测试文件 `crash_*_test.go`，并发驱动断连清理与订阅创建/删除）。
+测试源码 `crash_sub02_test.go` 与完整复现记录（命令、race 报告原始输出）见本目录 [REPRODUCTION.md](REPRODUCTION.md)。
 
 ## 修复建议
 

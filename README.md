@@ -8,6 +8,7 @@ O-RAN SC 安全研究与协调披露材料，按问题分别归档。整理日�
 |---|---|---|---|---|
 | [Appmgr：镜像来源真实性](appmgr/README.md) | `ric-plt-appmgr / xapp_onboarder`：描述符、发布者与镜像内容之间的信任绑定 | 固定提交的源码审计与官方测试预期 | 受支持架构的信任边界、真实服务及部署复现 | [RIC-1078](https://lf-o-ran-sc.atlassian.net/browse/RIC-1078)，MITRE 申请跟踪号 `CAN-2026-2039411` |
 | [Submgr：跨 E2 节点订阅归属](submgr/OVERVIEW.zh-CN.md) | `ric-plt-submgr`：Delete Required 处理缺少来源节点与订阅所有者绑定 | 固定提交的源码审计、原函数隔离 mock、前后对照及本地补丁 | 真实 APER/SCTP/RMR 链路、发布镜像及完整原生回归 | [RIC-1079](https://lf-o-ran-sc.atlassian.net/browse/RIC-1079)，本仓库 [Issue #1](https://github.com/Sgracle/oran-sc-security-report/issues/1) |
+| [Crash Validation：三组件崩溃/资源缺陷实测](crash-validation-20261106/README.md) | `ric-plt-submgr` / `ric-plt-e2mgr` / `o-du-l2`：2026-10-27 静态审查 9 项发现的隔离环境复现与证伪 | 真实源码树内 `go test -race`、Go 原生 `fatal error`、ASan/LSan 实测复现 | 向上游/CNA 发送报告及编号申请 | 无（截至 2026-11-06 尚未发送） |
 
 两个问题的证据强度不同。Submgr 的 mock 测试和修复结果不构成 Appmgr 的验证证据。
 目前未在这些材料中确认正式 CVE 分配、厂商认可或确定风险评分。
@@ -47,6 +48,10 @@ submgr/
   LICENSES/                             保留的原始许可说明
   BUNDLE-MANIFEST.json                   原始 Submgr 文件哈希
   COORDINATION.md / PROVENANCE.md        协调与来源
+crash-validation-20261106/
+  README.md                             三组件崩溃验证概览与证据边界
+  cve-report-20261106.md                CVE 上报说明（7 项已验证漏洞）
+  validation-report-20261106.md         隔离实测复现命令与原始输出
 REORGANIZATION.md                        路径迁移及证据完整性说明
 ```
 

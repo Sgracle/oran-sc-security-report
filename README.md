@@ -51,6 +51,10 @@ ASan/LSan 双证据。静态审查中尚未实测的候选（E2-01、DU-01、DU-
 
 ## 阅读入口
 
+**CNVD 报送材料**
+
+- [CNVD 报送材料目录](cnvd/README.md)：两份中文报送报告（SUBNEW1 真实组件 DoS、DU04 越界写）
+
 **Appmgr / xApp 制品真实性**
 
 - [中文概览与状态](appmgr/README.md)
@@ -104,6 +108,10 @@ sub03-test-exit-route/                   submgr 生产暴露测试退出入口
   README.md REPRODUCTION.md crash_sub03_test.go
 submgr-rmr-crash/                        submgr 未认证 RMR 消息致 SIGSEGV 崩溃（2026-11-19 实测）
   README.md REPRODUCTION.md rmr_inject.go evidence/
+cnvd/                                    CNVD 报送材料（中文，按表单字段组织）
+  README.md                              两份报告索引与证据级别说明
+  CNVD-SUBNEW1-submgr-rmr-dos.zh-CN.md   submgr 未认证 RMR 崩溃远程 DoS
+  CNVD-DU04-o-du-l2-slot-oob.zh-CN.md    o-du-l2 订阅待响应槽位越界写
 crash-validation-20261106.md             Crash Validation 根级报告（CVE 说明 + 复现记录）
 REORGANIZATION.md                        路径迁移及证据完整性说明
 ```

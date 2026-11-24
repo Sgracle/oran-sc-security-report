@@ -1,0 +1,243 @@
+{"log":"unexpected fault address 0x7f59ac000c41\n","stream":"stderr","time":"2026-11-19T11:12:50.014532568Z"}
+{"log":"fatal error: fault\n","stream":"stderr","time":"2026-11-19T11:12:50.0145561Z"}
+{"log":"[signal SIGSEGV: segmentation violation code=0x1 addr=0x7f59ac000c41 pc=0xa3e886]\n","stream":"stderr","time":"2026-11-19T11:12:50.016904645Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.016928115Z"}
+{"log":"goroutine 45 [running]:\n","stream":"stderr","time":"2026-11-19T11:12:50.016930235Z"}
+{"log":"runtime.throw({0xbe6883?, 0xc00013f708?})\n","stream":"stderr","time":"2026-11-19T11:12:50.017726431Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/panic.go:992 +0x71 fp=0xc00013f6c8 sp=0xc00013f698 pc=0x439411\n","stream":"stderr","time":"2026-11-19T11:12:50.017749473Z"}
+{"log":"runtime.sigpanic()\n","stream":"stderr","time":"2026-11-19T11:12:50.017753705Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/signal_unix.go:825 +0x2ec fp=0xc00013f718 sp=0xc00013f6c8 pc=0x44e9cc\n","stream":"stderr","time":"2026-11-19T11:12:50.017756441Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*RMRClient).parseMessage(0xc000513400, 0x7f58ac0031b0)\n","stream":"stderr","time":"2026-11-19T11:12:50.017872065Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/rmr.go:305 +0x246 fp=0xc00013f778 sp=0xc00013f718 pc=0xa3e886\n","stream":"stderr","time":"2026-11-19T11:12:50.0178968Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*RMRClient).Start.func2()\n","stream":"stderr","time":"2026-11-19T11:12:50.017898274Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/rmr.go:247 +0x17e fp=0xc00013f7e0 sp=0xc00013f778 pc=0xa3e07e\n","stream":"stderr","time":"2026-11-19T11:12:50.017899208Z"}
+{"log":"runtime.goexit()\n","stream":"stderr","time":"2026-11-19T11:12:50.018190562Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/asm_amd64.s:1571 +0x1 fp=0xc00013f7e8 sp=0xc00013f7e0 pc=0x4691e1\n","stream":"stderr","time":"2026-11-19T11:12:50.018199123Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*RMRClient).Start\n","stream":"stderr","time":"2026-11-19T11:12:50.018201928Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/rmr.go:225 +0x2fc\n","stream":"stderr","time":"2026-11-19T11:12:50.018203794Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.018205515Z"}
+{"log":"goroutine 1 [semacquire, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.01820707Z"}
+{"log":"sync.runtime_Semacquire(0xc00044a1c0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.018909933Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/sema.go:56 +0x25\n","stream":"stderr","time":"2026-11-19T11:12:50.018915542Z"}
+{"log":"sync.(*WaitGroup).Wait(0xc0000e0198?)\n","stream":"stderr","time":"2026-11-19T11:12:50.01923345Z"}
+{"log":"\u0009/opt/go/1.18.5/src/sync/waitgroup.go:136 +0x52\n","stream":"stderr","time":"2026-11-19T11:12:50.019243156Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*RMRClient).Start(0xc000513400, {0xd02000?, 0xc0004f0000?})\n","stream":"stderr","time":"2026-11-19T11:12:50.019246132Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/rmr.go:260 +0x358\n","stream":"stderr","time":"2026-11-19T11:12:50.019248187Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.RunWithParams({0xd02000, 0xc0004f0000}, 0x1)\n","stream":"stderr","time":"2026-11-19T11:12:50.019249933Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/xapp.go:330 +0x3e5\n","stream":"stderr","time":"2026-11-19T11:12:50.0192518Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.Run(...)\n","stream":"stderr","time":"2026-11-19T11:12:50.019253545Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/xapp.go:334\n","stream":"stderr","time":"2026-11-19T11:12:50.019255199Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/submgr/pkg/control.(*Control).Run(0xc0004f0000?)\n","stream":"stderr","time":"2026-11-19T11:12:50.019256774Z"}
+{"log":"\u0009/opt/submgr/pkg/control/control.go:386 +0x1c9\n","stream":"stderr","time":"2026-11-19T11:12:50.019258307Z"}
+{"log":"main.main()\n","stream":"stderr","time":"2026-11-19T11:12:50.019259931Z"}
+{"log":"\u0009/opt/submgr/cmd/submgr.go:28 +0x1e\n","stream":"stderr","time":"2026-11-19T11:12:50.019261443Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.019461731Z"}
+{"log":"goroutine 58 [semacquire, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.019474193Z"}
+{"log":"sync.runtime_Semacquire(0x8925e0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.019475231Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/sema.go:56 +0x25\n","stream":"stderr","time":"2026-11-19T11:12:50.019476017Z"}
+{"log":"sync.(*WaitGroup).Wait(0xc00050e000?)\n","stream":"stderr","time":"2026-11-19T11:12:50.019476825Z"}
+{"log":"\u0009/opt/go/1.18.5/src/sync/waitgroup.go:136 +0x52\n","stream":"stderr","time":"2026-11-19T11:12:50.019477576Z"}
+{"log":"github.com/spf13/viper.(*Viper).WatchConfig.func1()\n","stream":"stderr","time":"2026-11-19T11:12:50.019478462Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/spf13/viper@v1.4.0/viper.go:347 +0x2ef\n","stream":"stderr","time":"2026-11-19T11:12:50.019489989Z"}
+{"log":"created by github.com/spf13/viper.(*Viper).WatchConfig\n","stream":"stderr","time":"2026-11-19T11:12:50.019490963Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/spf13/viper@v1.4.0/viper.go:287 +0x8d\n","stream":"stderr","time":"2026-11-19T11:12:50.019491781Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.019651826Z"}
+{"log":"goroutine 39 [syscall, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.01965711Z"}
+{"log":"syscall.Syscall6(0xe8, 0x7, 0xc000159c14, 0x7, 0xffffffffffffffff, 0x0, 0x0)\n","stream":"stderr","time":"2026-11-19T11:12:50.019658242Z"}
+{"log":"\u0009/opt/go/1.18.5/src/syscall/asm_linux_amd64.s:43 +0x5\n","stream":"stderr","time":"2026-11-19T11:12:50.019659362Z"}
+{"log":"golang.org/x/sys/unix.EpollWait(0x2?, {0xc000159c14?, 0x2?, 0xc000554000?}, 0xc000159cdc?)\n","stream":"stderr","time":"2026-11-19T11:12:50.019660263Z"}
+{"log":"\u0009/root/go/pkg/mod/golang.org/x/sys@v0.0.0-20200519105757-fe76b779f299/unix/zsyscall_linux_amd64.go:76 +0x58\n","stream":"stderr","time":"2026-11-19T11:12:50.019661201Z"}
+{"log":"github.com/fsnotify/fsnotify.(*fdPoller).wait(0xc00003e200)\n","stream":"stderr","time":"2026-11-19T11:12:50.019662067Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/fsnotify/fsnotify@v1.4.9/inotify_poller.go:86 +0x7d\n","stream":"stderr","time":"2026-11-19T11:12:50.019662854Z"}
+{"log":"github.com/fsnotify/fsnotify.(*Watcher).readEvents(0xc00050e000)\n","stream":"stderr","time":"2026-11-19T11:12:50.019663656Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/fsnotify/fsnotify@v1.4.9/inotify.go:192 +0x26e\n","stream":"stderr","time":"2026-11-19T11:12:50.019664519Z"}
+{"log":"created by github.com/fsnotify/fsnotify.NewWatcher\n","stream":"stderr","time":"2026-11-19T11:12:50.019665393Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/fsnotify/fsnotify@v1.4.9/inotify.go:59 +0x1c5\n","stream":"stderr","time":"2026-11-19T11:12:50.019772982Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.019780613Z"}
+{"log":"goroutine 40 [select, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.019783109Z"}
+{"log":"github.com/spf13/viper.(*Viper).WatchConfig.func1.1()\n","stream":"stderr","time":"2026-11-19T11:12:50.020094899Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/spf13/viper@v1.4.0/viper.go:308 +0x105\n","stream":"stderr","time":"2026-11-19T11:12:50.020103477Z"}
+{"log":"created by github.com/spf13/viper.(*Viper).WatchConfig.func1\n","stream":"stderr","time":"2026-11-19T11:12:50.020105926Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/spf13/viper@v1.4.0/viper.go:306 +0x2bd\n","stream":"stderr","time":"2026-11-19T11:12:50.020107722Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.020346055Z"}
+{"log":"goroutine 59 [chan receive, 2 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.020353567Z"}
+{"log":"github.com/go-redis/redis/internal/pool.(*ConnPool).reaper(0xc0005d8000, 0xc0004fe000?)\n","stream":"stderr","time":"2026-11-19T11:12:50.02035926Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/pool.go:449 +0x87\n","stream":"stderr","time":"2026-11-19T11:12:50.020360351Z"}
+{"log":"created by github.com/go-redis/redis/internal/pool.NewConnPool\n","stream":"stderr","time":"2026-11-19T11:12:50.020361309Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/pool.go:99 +0x1b9\n","stream":"stderr","time":"2026-11-19T11:12:50.020362142Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.020362992Z"}
+{"log":"goroutine 24 [chan receive, 2 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.020363911Z"}
+{"log":"github.com/go-redis/redis/internal/pool.(*ConnPool).reaper(0xc00013c000, 0xc0004fe060?)\n","stream":"stderr","time":"2026-11-19T11:12:50.020429325Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/pool.go:449 +0x87\n","stream":"stderr","time":"2026-11-19T11:12:50.020431586Z"}
+{"log":"created by github.com/go-redis/redis/internal/pool.NewConnPool\n","stream":"stderr","time":"2026-11-19T11:12:50.020443908Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/pool.go:99 +0x1b9\n","stream":"stderr","time":"2026-11-19T11:12:50.020445112Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.020446301Z"}
+{"log":"goroutine 26 [syscall, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.02044739Z"}
+{"log":"os/signal.signal_recv()\n","stream":"stderr","time":"2026-11-19T11:12:50.020448913Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/sigqueue.go:151 +0x2f\n","stream":"stderr","time":"2026-11-19T11:12:50.020450078Z"}
+{"log":"os/signal.loop()\n","stream":"stderr","time":"2026-11-19T11:12:50.020451366Z"}
+{"log":"\u0009/opt/go/1.18.5/src/os/signal/signal_unix.go:23 +0x19\n","stream":"stderr","time":"2026-11-19T11:12:50.020452544Z"}
+{"log":"created by os/signal.Notify.func1.1\n","stream":"stderr","time":"2026-11-19T11:12:50.020852537Z"}
+{"log":"\u0009/opt/go/1.18.5/src/os/signal/signal.go:151 +0x2a\n","stream":"stderr","time":"2026-11-19T11:12:50.02099472Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.021002293Z"}
+{"log":"goroutine 66 [chan receive, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.021004425Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.InstallSignalHandler.func1()\n","stream":"stderr","time":"2026-11-19T11:12:50.021006159Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/xapp.go:226 +0x38\n","stream":"stderr","time":"2026-11-19T11:12:50.021007932Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.InstallSignalHandler\n","stream":"stderr","time":"2026-11-19T11:12:50.021009669Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/xapp.go:225 +0xb6\n","stream":"stderr","time":"2026-11-19T11:12:50.021011245Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.021012889Z"}
+{"log":"goroutine 11 [chan receive, 2 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.021014339Z"}
+{"log":"github.com/go-redis/redis/internal/pool.(*ConnPool).reaper(0xc00013c0b0, 0x0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.021015897Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/pool.go:449 +0x87\n","stream":"stderr","time":"2026-11-19T11:12:50.021017442Z"}
+{"log":"created by github.com/go-redis/redis/internal/pool.NewConnPool\n","stream":"stderr","time":"2026-11-19T11:12:50.021019046Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/pool.go:99 +0x1b9\n","stream":"stderr","time":"2026-11-19T11:12:50.02102054Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.021022171Z"}
+{"log":"goroutine 13 [chan receive, 2 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.021023559Z"}
+{"log":"github.com/go-redis/redis/internal/pool.(*ConnPool).reaper(0xc00013c160, 0x0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.021025159Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/pool.go:449 +0x87\n","stream":"stderr","time":"2026-11-19T11:12:50.021027185Z"}
+{"log":"created by github.com/go-redis/redis/internal/pool.NewConnPool\n","stream":"stderr","time":"2026-11-19T11:12:50.021028907Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/pool.go:99 +0x1b9\n","stream":"stderr","time":"2026-11-19T11:12:50.021030433Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.021250625Z"}
+{"log":"goroutine 120 [select, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.021272662Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/sdlgo/internal/sdlgoredis.(*DB).SubscribeChannelDB.func1(0xc000594e80?, {0xc0004bab50, 0xc}, {0xbe5430, 0x3}, {0xc0005b0540?, 0xc0005b05a0?, 0xc0005b0600?}, {0xc0006215b0, 0x1, ...})\n","stream":"stderr","time":"2026-11-19T11:12:50.021274723Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/sdlgo.git@v0.8.0/internal/sdlgoredis/sdlgoredis.go:279 +0x1c5\n","stream":"stderr","time":"2026-11-19T11:12:50.021278095Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/sdlgo/internal/sdlgoredis.(*DB).SubscribeChannelDB\n","stream":"stderr","time":"2026-11-19T11:12:50.02128681Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/sdlgo.git@v0.8.0/internal/sdlgoredis/sdlgoredis.go:270 +0x2fa\n","stream":"stderr","time":"2026-11-19T11:12:50.021288493Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.021289954Z"}
+{"log":"goroutine 27 [IO wait]:\n","stream":"stderr","time":"2026-11-19T11:12:50.021291236Z"}
+{"log":"internal/poll.runtime_pollWait(0x7f591c1796a8, 0x72)\n","stream":"stderr","time":"2026-11-19T11:12:50.021292561Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/netpoll.go:302 +0x89\n","stream":"stderr","time":"2026-11-19T11:12:50.021293834Z"}
+{"log":"internal/poll.(*pollDesc).wait(0xc000658100?, 0xc000548000?, 0x0)\n","stream":"stderr","time":"2026-11-19T11:12:50.021295043Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:83 +0x32\n","stream":"stderr","time":"2026-11-19T11:12:50.021296395Z"}
+{"log":"internal/poll.(*pollDesc).waitRead(...)\n","stream":"stderr","time":"2026-11-19T11:12:50.021420295Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:88\n","stream":"stderr","time":"2026-11-19T11:12:50.02142666Z"}
+{"log":"internal/poll.(*FD).Read(0xc000658100, {0xc000548000, 0x1000, 0x1000})\n","stream":"stderr","time":"2026-11-19T11:12:50.021428842Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_unix.go:167 +0x25a\n","stream":"stderr","time":"2026-11-19T11:12:50.021430503Z"}
+{"log":"net.(*netFD).Read(0xc000658100, {0xc000548000?, 0x2?, 0xc000090d38?})\n","stream":"stderr","time":"2026-11-19T11:12:50.021432134Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/fd_posix.go:55 +0x29\n","stream":"stderr","time":"2026-11-19T11:12:50.02143374Z"}
+{"log":"net.(*conn).Read(0xc0000e0020, {0xc000548000?, 0x0?, 0x7f591c1796d0?})\n","stream":"stderr","time":"2026-11-19T11:12:50.021435311Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/net.go:183 +0x45\n","stream":"stderr","time":"2026-11-19T11:12:50.021436879Z"}
+{"log":"bufio.(*Reader).fill(0xc0006d01e0)\n","stream":"stderr","time":"2026-11-19T11:12:50.021692061Z"}
+{"log":"\u0009/opt/go/1.18.5/src/bufio/bufio.go:106 +0x103\n","stream":"stderr","time":"2026-11-19T11:12:50.0216977Z"}
+{"log":"bufio.(*Reader).ReadSlice(0xc0006d01e0, 0x72?)\n","stream":"stderr","time":"2026-11-19T11:12:50.021698869Z"}
+{"log":"\u0009/opt/go/1.18.5/src/bufio/bufio.go:371 +0x2f\n","stream":"stderr","time":"2026-11-19T11:12:50.021699671Z"}
+{"log":"bufio.(*Reader).ReadLine(0xc0006d01e0)\n","stream":"stderr","time":"2026-11-19T11:12:50.021700464Z"}
+{"log":"\u0009/opt/go/1.18.5/src/bufio/bufio.go:400 +0x27\n","stream":"stderr","time":"2026-11-19T11:12:50.021701233Z"}
+{"log":"github.com/go-redis/redis/internal/proto.(*Reader).ReadLine(0x0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.021702208Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/proto/reader.go:49 +0x25\n","stream":"stderr","time":"2026-11-19T11:12:50.021703104Z"}
+{"log":"github.com/go-redis/redis/internal/proto.(*Reader).ReadReply(0xc2b7d44bf0082b35?, 0xc3efa0)\n","stream":"stderr","time":"2026-11-19T11:12:50.021703932Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/proto/reader.go:66 +0x27\n","stream":"stderr","time":"2026-11-19T11:12:50.021704758Z"}
+{"log":"github.com/go-redis/redis.(*Cmd).readReply(...)\n","stream":"stderr","time":"2026-11-19T11:12:50.021979938Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/command.go:271\n","stream":"stderr","time":"2026-11-19T11:12:50.021985565Z"}
+{"log":"github.com/go-redis/redis.(*PubSub).ReceiveTimeout.func1(0xc0006d0180?)\n","stream":"stderr","time":"2026-11-19T11:12:50.021987995Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:355 +0x31\n","stream":"stderr","time":"2026-11-19T11:12:50.021989836Z"}
+{"log":"github.com/go-redis/redis/internal/pool.(*Conn).WithReader(0xc0006d0180, 0xac5cc0?, 0xc000090ef0)\n","stream":"stderr","time":"2026-11-19T11:12:50.02199995Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/conn.go:79 +0x38\n","stream":"stderr","time":"2026-11-19T11:12:50.022002024Z"}
+{"log":"github.com/go-redis/redis.(*PubSub).ReceiveTimeout(0xc000228000, 0x0)\n","stream":"stderr","time":"2026-11-19T11:12:50.0220037Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:354 +0x9f\n","stream":"stderr","time":"2026-11-19T11:12:50.02200529Z"}
+{"log":"github.com/go-redis/redis.(*PubSub).Receive(...)\n","stream":"stderr","time":"2026-11-19T11:12:50.02200692Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:370\n","stream":"stderr","time":"2026-11-19T11:12:50.022008533Z"}
+{"log":"github.com/go-redis/redis.(*PubSub).initChannel.func1()\n","stream":"stderr","time":"2026-11-19T11:12:50.022010099Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:436 +0x77\n","stream":"stderr","time":"2026-11-19T11:12:50.022011733Z"}
+{"log":"created by github.com/go-redis/redis.(*PubSub).initChannel\n","stream":"stderr","time":"2026-11-19T11:12:50.022013305Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:430 +0xb8\n","stream":"stderr","time":"2026-11-19T11:12:50.022014991Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.022016557Z"}
+{"log":"goroutine 62 [select]:\n","stream":"stderr","time":"2026-11-19T11:12:50.022018027Z"}
+{"log":"github.com/go-redis/redis.(*PubSub).initChannel.func2()\n","stream":"stderr","time":"2026-11-19T11:12:50.022019525Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:487 +0xe5\n","stream":"stderr","time":"2026-11-19T11:12:50.022021019Z"}
+{"log":"created by github.com/go-redis/redis.(*PubSub).initChannel\n","stream":"stderr","time":"2026-11-19T11:12:50.022022571Z"}
+{"log":"\u0009/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:480 +0xf6\n","stream":"stderr","time":"2026-11-19T11:12:50.022024112Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.022025729Z"}
+{"log":"goroutine 122 [semacquire, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.022027132Z"}
+{"log":"sync.runtime_Semacquire(0xc000665fe0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.02202871Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/sema.go:56 +0x25\n","stream":"stderr","time":"2026-11-19T11:12:50.022030215Z"}
+{"log":"sync.(*WaitGroup).Wait(0xbc63a0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.022031742Z"}
+{"log":"\u0009/opt/go/1.18.5/src/sync/waitgroup.go:136 +0x52\n","stream":"stderr","time":"2026-11-19T11:12:50.022033248Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve(0xc000724c60)\n","stream":"stderr","time":"2026-11-19T11:12:50.022034797Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:328 +0x13bb\n","stream":"stderr","time":"2026-11-19T11:12:50.022036502Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*Subscriber).Listen(0xc000205c70, 0xc0003dc230, 0xc0003dc240, 0xc0003dc250)\n","stream":"stderr","time":"2026-11-19T11:12:50.022038081Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/subscription.go:158 +0x37d\n","stream":"stderr","time":"2026-11-19T11:12:50.022039706Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/submgr/pkg/control.NewControl.func1()\n","stream":"stderr","time":"2026-11-19T11:12:50.02204187Z"}
+{"log":"\u0009/opt/submgr/pkg/control/control.go:185 +0xef\n","stream":"stderr","time":"2026-11-19T11:12:50.022043507Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/submgr/pkg/control.NewControl\n","stream":"stderr","time":"2026-11-19T11:12:50.022045027Z"}
+{"log":"\u0009/opt/submgr/pkg/control/control.go:184 +0xd5e\n","stream":"stderr","time":"2026-11-19T11:12:50.022253768Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.022267406Z"}
+{"log":"goroutine 65 [sleep]:\n","stream":"stderr","time":"2026-11-19T11:12:50.022270066Z"}
+{"log":"time.Sleep(0x12a05f200)\n","stream":"stderr","time":"2026-11-19T11:12:50.02227189Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/time.go:194 +0x12e\n","stream":"stderr","time":"2026-11-19T11:12:50.022273735Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.registerXapp()\n","stream":"stderr","time":"2026-11-19T11:12:50.022275425Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/xapp.go:113 +0x27\n","stream":"stderr","time":"2026-11-19T11:12:50.022277045Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.RunWithParams\n","stream":"stderr","time":"2026-11-19T11:12:50.022278835Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/xapp.go:328 +0x3c6\n","stream":"stderr","time":"2026-11-19T11:12:50.022280431Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.02228211Z"}
+{"log":"goroutine 131 [IO wait, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.022283615Z"}
+{"log":"internal/poll.runtime_pollWait(0x7f591c1792e8, 0x72)\n","stream":"stderr","time":"2026-11-19T11:12:50.022285161Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/netpoll.go:302 +0x89\n","stream":"stderr","time":"2026-11-19T11:12:50.022286685Z"}
+{"log":"internal/poll.(*pollDesc).wait(0xc000594100?, 0x0?, 0x0)\n","stream":"stderr","time":"2026-11-19T11:12:50.022288327Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:83 +0x32\n","stream":"stderr","time":"2026-11-19T11:12:50.022290269Z"}
+{"log":"internal/poll.(*pollDesc).waitRead(...)\n","stream":"stderr","time":"2026-11-19T11:12:50.022291822Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:88\n","stream":"stderr","time":"2026-11-19T11:12:50.02229333Z"}
+{"log":"internal/poll.(*FD).Accept(0xc000594100)\n","stream":"stderr","time":"2026-11-19T11:12:50.022294925Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_unix.go:614 +0x22c\n","stream":"stderr","time":"2026-11-19T11:12:50.022296426Z"}
+{"log":"net.(*netFD).accept(0xc000594100)\n","stream":"stderr","time":"2026-11-19T11:12:50.022298019Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/fd_unix.go:172 +0x35\n","stream":"stderr","time":"2026-11-19T11:12:50.022299534Z"}
+{"log":"net.(*TCPListener).accept(0xc000550000)\n","stream":"stderr","time":"2026-11-19T11:12:50.02230104Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/tcpsock_posix.go:139 +0x28\n","stream":"stderr","time":"2026-11-19T11:12:50.022302529Z"}
+{"log":"net.(*TCPListener).Accept(0xc000550000)\n","stream":"stderr","time":"2026-11-19T11:12:50.022304187Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/tcpsock.go:288 +0x3d\n","stream":"stderr","time":"2026-11-19T11:12:50.022305726Z"}
+{"log":"net/http.(*Server).Serve(0xc00054e000, {0xd06e08, 0xc000550000})\n","stream":"stderr","time":"2026-11-19T11:12:50.022307306Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/http/server.go:3039 +0x385\n","stream":"stderr","time":"2026-11-19T11:12:50.022308876Z"}
+{"log":"net/http.(*Server).ListenAndServe(0xc00054e000)\n","stream":"stderr","time":"2026-11-19T11:12:50.022310401Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/http/server.go:2968 +0x7d\n","stream":"stderr","time":"2026-11-19T11:12:50.022311939Z"}
+{"log":"net/http.ListenAndServe({0xc000038638, 0x5}, {0xd02b00?, 0xc000518000})\n","stream":"stderr","time":"2026-11-19T11:12:50.022313461Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/http/server.go:3222 +0x96\n","stream":"stderr","time":"2026-11-19T11:12:50.022315027Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.RunWithParams\n","stream":"stderr","time":"2026-11-19T11:12:50.022316573Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/xapp.go:322 +0x30b\n","stream":"stderr","time":"2026-11-19T11:12:50.022318219Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.022319903Z"}
+{"log":"goroutine 29 [chan receive, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.022321326Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.handleInterrupt.func1()\n","stream":"stderr","time":"2026-11-19T11:12:50.022326214Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:495 +0x45\n","stream":"stderr","time":"2026-11-19T11:12:50.022328157Z"}
+{"log":"sync.(*Once).doSlow(0x0?, 0x0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.022331934Z"}
+{"log":"\u0009/opt/go/1.18.5/src/sync/once.go:68 +0xc2\n","stream":"stderr","time":"2026-11-19T11:12:50.022333711Z"}
+{"log":"sync.(*Once).Do(...)\n","stream":"stderr","time":"2026-11-19T11:12:50.022335324Z"}
+{"log":"\u0009/opt/go/1.18.5/src/sync/once.go:59\n","stream":"stderr","time":"2026-11-19T11:12:50.022336814Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.handleInterrupt(0x0?, 0x0?)\n","stream":"stderr","time":"2026-11-19T11:12:50.022338401Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:494 +0x3b\n","stream":"stderr","time":"2026-11-19T11:12:50.022340019Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve\n","stream":"stderr","time":"2026-11-19T11:12:50.022341697Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:173 +0x19b\n","stream":"stderr","time":"2026-11-19T11:12:50.02234324Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.022344826Z"}
+{"log":"goroutine 30 [IO wait, 2 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.022346322Z"}
+{"log":"internal/poll.runtime_pollWait(0x7f591c1793d8, 0x72)\n","stream":"stderr","time":"2026-11-19T11:12:50.022347785Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/netpoll.go:302 +0x89\n","stream":"stderr","time":"2026-11-19T11:12:50.022349288Z"}
+{"log":"internal/poll.(*pollDesc).wait(0xc00010cc00?, 0xc000044500?, 0x0)\n","stream":"stderr","time":"2026-11-19T11:12:50.022350846Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:83 +0x32\n","stream":"stderr","time":"2026-11-19T11:12:50.02235237Z"}
+{"log":"internal/poll.(*pollDesc).waitRead(...)\n","stream":"stderr","time":"2026-11-19T11:12:50.022353907Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:88\n","stream":"stderr","time":"2026-11-19T11:12:50.022355377Z"}
+{"log":"internal/poll.(*FD).Accept(0xc00010cc00)\n","stream":"stderr","time":"2026-11-19T11:12:50.022356881Z"}
+{"log":"\u0009/opt/go/1.18.5/src/internal/poll/fd_unix.go:614 +0x22c\n","stream":"stderr","time":"2026-11-19T11:12:50.022358408Z"}
+{"log":"net.(*netFD).accept(0xc00010cc00)\n","stream":"stderr","time":"2026-11-19T11:12:50.022390714Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/fd_unix.go:172 +0x35\n","stream":"stderr","time":"2026-11-19T11:12:50.02240263Z"}
+{"log":"net.(*TCPListener).accept(0xc0000d97b8)\n","stream":"stderr","time":"2026-11-19T11:12:50.022403801Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/tcpsock_posix.go:139 +0x28\n","stream":"stderr","time":"2026-11-19T11:12:50.022404708Z"}
+{"log":"net.(*TCPListener).Accept(0xc0000d97b8)\n","stream":"stderr","time":"2026-11-19T11:12:50.022405533Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/tcpsock.go:288 +0x3d\n","stream":"stderr","time":"2026-11-19T11:12:50.02240653Z"}
+{"log":"net/http.(*Server).Serve(0xc0001cf420, {0xd06e08, 0xc0000d97b8})\n","stream":"stderr","time":"2026-11-19T11:12:50.022407344Z"}
+{"log":"\u0009/opt/go/1.18.5/src/net/http/server.go:3039 +0x385\n","stream":"stderr","time":"2026-11-19T11:12:50.022408189Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve.func2({0xd06e08, 0xc0000d97b8})\n","stream":"stderr","time":"2026-11-19T11:12:50.022694472Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:222 +0x7e\n","stream":"stderr","time":"2026-11-19T11:12:50.022700498Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve\n","stream":"stderr","time":"2026-11-19T11:12:50.022701808Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:220 +0x930\n","stream":"stderr","time":"2026-11-19T11:12:50.022708155Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.022709119Z"}
+{"log":"goroutine 31 [chan receive, 134 minutes]:\n","stream":"stderr","time":"2026-11-19T11:12:50.02270991Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).handleShutdown(0xc000724c60, 0x5?, 0xc000593230)\n","stream":"stderr","time":"2026-11-19T11:12:50.022710738Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:416 +0x78\n","stream":"stderr","time":"2026-11-19T11:12:50.0227116Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve\n","stream":"stderr","time":"2026-11-19T11:12:50.022712645Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:326 +0x13ae\n","stream":"stderr","time":"2026-11-19T11:12:50.022713497Z"}
+{"log":"\n","stream":"stderr","time":"2026-11-19T11:12:50.022714332Z"}
+{"log":"goroutine 46 [sleep]:\n","stream":"stderr","time":"2026-11-19T11:12:50.022715083Z"}
+{"log":"time.Sleep(0x3b9aca00)\n","stream":"stderr","time":"2026-11-19T11:12:50.022715868Z"}
+{"log":"\u0009/opt/go/1.18.5/src/runtime/time.go:194 +0x12e\n","stream":"stderr","time":"2026-11-19T11:12:50.022716741Z"}
+{"log":"gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*RMRClient).Start.func3()\n","stream":"stderr","time":"2026-11-19T11:12:50.022717684Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/rmr.go:256 +0x69\n","stream":"stderr","time":"2026-11-19T11:12:50.022718509Z"}
+{"log":"created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*RMRClient).Start\n","stream":"stderr","time":"2026-11-19T11:12:50.022719877Z"}
+{"log":"\u0009/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/rmr.go:252 +0x34e\n","stream":"stderr","time":"2026-11-19T11:12:50.022721059Z"}

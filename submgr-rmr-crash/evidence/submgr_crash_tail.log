@@ -1,0 +1,300 @@
+internal/poll.runtime_pollWait(0x7d7f93747fa8, 0x72)
+	/opt/go/1.18.5/src/runtime/netpoll.go:302 +0x89
+internal/poll.(*pollDesc).wait(0xc000766e00?, 0xc0000f4000?, 0x0)
+	/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:83 +0x32
+internal/poll.(*pollDesc).waitRead(...)
+	/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:88
+internal/poll.(*FD).Read(0xc000766e00, {0xc0000f4000, 0x1000, 0x1000})
+	/opt/go/1.18.5/src/internal/poll/fd_unix.go:167 +0x25a
+net.(*netFD).Read(0xc000766e00, {0xc0000f4000?, 0x2?, 0xc000093d38?})
+	/opt/go/1.18.5/src/net/fd_posix.go:55 +0x29
+net.(*conn).Read(0xc00012a030, {0xc0000f4000?, 0x0?, 0x7d7f93747fd0?})
+	/opt/go/1.18.5/src/net/net.go:183 +0x45
+bufio.(*Reader).fill(0xc000129620)
+	/opt/go/1.18.5/src/bufio/bufio.go:106 +0x103
+bufio.(*Reader).ReadSlice(0xc000129620, 0x72?)
+	/opt/go/1.18.5/src/bufio/bufio.go:371 +0x2f
+bufio.(*Reader).ReadLine(0xc000129620)
+	/opt/go/1.18.5/src/bufio/bufio.go:400 +0x27
+github.com/go-redis/redis/internal/proto.(*Reader).ReadLine(0x0?)
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/proto/reader.go:49 +0x25
+github.com/go-redis/redis/internal/proto.(*Reader).ReadReply(0xc2b7c61f26ca6160?, 0xc3efa0)
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/proto/reader.go:66 +0x27
+github.com/go-redis/redis.(*Cmd).readReply(...)
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/command.go:271
+github.com/go-redis/redis.(*PubSub).ReceiveTimeout.func1(0xc0001295c0?)
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:355 +0x31
+github.com/go-redis/redis/internal/pool.(*Conn).WithReader(0xc0001295c0, 0xac5cc0?, 0xc000093ef0)
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/internal/pool/conn.go:79 +0x38
+github.com/go-redis/redis.(*PubSub).ReceiveTimeout(0xc000257810, 0x0)
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:354 +0x9f
+github.com/go-redis/redis.(*PubSub).Receive(...)
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:370
+github.com/go-redis/redis.(*PubSub).initChannel.func1()
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:436 +0x77
+created by github.com/go-redis/redis.(*PubSub).initChannel
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:430 +0xb8
+
+goroutine 101 [select]:
+github.com/go-redis/redis.(*PubSub).initChannel.func2()
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:487 +0xe5
+created by github.com/go-redis/redis.(*PubSub).initChannel
+	/root/go/pkg/mod/github.com/go-redis/redis@v6.15.9+incompatible/pubsub.go:480 +0xf6
+
+goroutine 203 [select, 1197 minutes]:
+net/http.(*persistConn).writeLoop(0xc00057c6c0)
+	/opt/go/1.18.5/src/net/http/transport.go:2392 +0xf5
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1751 +0x1791
+
+goroutine 45 [semacquire, 1253 minutes]:
+sync.runtime_Semacquire(0xc00067bce0?)
+	/opt/go/1.18.5/src/runtime/sema.go:56 +0x25
+sync.(*WaitGroup).Wait(0xbc63a0?)
+	/opt/go/1.18.5/src/sync/waitgroup.go:136 +0x52
+gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve(0xc0000dac60)
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:328 +0x13bb
+gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*Subscriber).Listen(0xc0002567e0, 0xc00060e020, 0xc00060e050, 0xc00060e060)
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/subscription.go:158 +0x37d
+gerrit.o-ran-sc.org/r/ric-plt/submgr/pkg/control.NewControl.func1()
+	/opt/submgr/pkg/control/control.go:185 +0xef
+created by gerrit.o-ran-sc.org/r/ric-plt/submgr/pkg/control.NewControl
+	/opt/submgr/pkg/control/control.go:184 +0xd5e
+
+goroutine 118 [IO wait, 13 minutes]:
+internal/poll.runtime_pollWait(0x7d7f93747cd8, 0x72)
+	/opt/go/1.18.5/src/runtime/netpoll.go:302 +0x89
+internal/poll.(*pollDesc).wait(0xc00079a480?, 0xc000050000?, 0x0)
+	/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:83 +0x32
+internal/poll.(*pollDesc).waitRead(...)
+	/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:88
+internal/poll.(*FD).Accept(0xc00079a480)
+	/opt/go/1.18.5/src/internal/poll/fd_unix.go:614 +0x22c
+net.(*netFD).accept(0xc00079a480)
+	/opt/go/1.18.5/src/net/fd_unix.go:172 +0x35
+net.(*TCPListener).accept(0xc00052a378)
+	/opt/go/1.18.5/src/net/tcpsock_posix.go:139 +0x28
+net.(*TCPListener).Accept(0xc00052a378)
+	/opt/go/1.18.5/src/net/tcpsock.go:288 +0x3d
+net/http.(*Server).Serve(0xc00001e000, {0xd06e08, 0xc00052a378})
+	/opt/go/1.18.5/src/net/http/server.go:3039 +0x385
+net/http.(*Server).ListenAndServe(0xc00001e000)
+	/opt/go/1.18.5/src/net/http/server.go:2968 +0x7d
+net/http.ListenAndServe({0xc0004fe788, 0x5}, {0xd02b00?, 0xc000132000})
+	/opt/go/1.18.5/src/net/http/server.go:3222 +0x96
+created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.RunWithParams
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/xapp.go:322 +0x30b
+
+goroutine 209 [select, 1191 minutes]:
+net/http.(*persistConn).readLoop(0xc00057c900)
+	/opt/go/1.18.5/src/net/http/transport.go:2213 +0xd99
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1750 +0x173e
+
+goroutine 122 [sleep]:
+time.Sleep(0x3b9aca00)
+	/opt/go/1.18.5/src/runtime/time.go:194 +0x12e
+gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*RMRClient).Start.func3()
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/rmr.go:256 +0x69
+created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/xapp.(*RMRClient).Start
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/xapp/rmr.go:252 +0x34e
+
+goroutine 158 [select, 1239 minutes]:
+net/http.(*persistConn).writeLoop(0xc0007157a0)
+	/opt/go/1.18.5/src/net/http/transport.go:2392 +0xf5
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1751 +0x1791
+
+goroutine 131 [chan receive, 1253 minutes]:
+gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.handleInterrupt.func1()
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:495 +0x45
+sync.(*Once).doSlow(0x0?, 0x0?)
+	/opt/go/1.18.5/src/sync/once.go:68 +0xc2
+sync.(*Once).Do(...)
+	/opt/go/1.18.5/src/sync/once.go:59
+gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.handleInterrupt(0x0?, 0x0?)
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:494 +0x3b
+created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:173 +0x19b
+
+goroutine 132 [IO wait, 23 minutes]:
+internal/poll.runtime_pollWait(0x7d7f93747be8, 0x72)
+	/opt/go/1.18.5/src/runtime/netpoll.go:302 +0x89
+internal/poll.(*pollDesc).wait(0xc00012c880?, 0xc000044500?, 0x0)
+	/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:83 +0x32
+internal/poll.(*pollDesc).waitRead(...)
+	/opt/go/1.18.5/src/internal/poll/fd_poll_runtime.go:88
+internal/poll.(*FD).Accept(0xc00012c880)
+	/opt/go/1.18.5/src/internal/poll/fd_unix.go:614 +0x22c
+net.(*netFD).accept(0xc00012c880)
+	/opt/go/1.18.5/src/net/fd_unix.go:172 +0x35
+net.(*TCPListener).accept(0xc00019f380)
+	/opt/go/1.18.5/src/net/tcpsock_posix.go:139 +0x28
+net.(*TCPListener).Accept(0xc00019f380)
+	/opt/go/1.18.5/src/net/tcpsock.go:288 +0x3d
+net/http.(*Server).Serve(0xc000217420, {0xd06e08, 0xc00019f380})
+	/opt/go/1.18.5/src/net/http/server.go:3039 +0x385
+gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve.func2({0xd06e08, 0xc00019f380})
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:222 +0x7e
+created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:220 +0x930
+
+goroutine 133 [chan receive, 1253 minutes]:
+gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).handleShutdown(0xc0000dac60, 0x0?, 0xc0004f0c18)
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:416 +0x78
+created by gerrit.o-ran-sc.org/r/ric-plt/xapp-frame/pkg/restapi.(*Server).Serve
+	/root/go/pkg/mod/gerrit.o-ran-sc.org/r/ric-plt/xapp-frame.git@v0.9.16/pkg/restapi/server.go:326 +0x13ae
+
+goroutine 157 [select, 1239 minutes]:
+net/http.(*persistConn).readLoop(0xc0007157a0)
+	/opt/go/1.18.5/src/net/http/transport.go:2213 +0xd99
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1750 +0x173e
+
+goroutine 129 [select, 1239 minutes]:
+net/http.(*persistConn).readLoop(0xc00057c7e0)
+	/opt/go/1.18.5/src/net/http/transport.go:2213 +0xd99
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1750 +0x173e
+
+goroutine 178 [select, 1239 minutes]:
+net/http.(*persistConn).writeLoop(0xc00057c7e0)
+	/opt/go/1.18.5/src/net/http/transport.go:2392 +0xf5
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1751 +0x1791
+
+goroutine 230 [select, 1191 minutes]:
+net/http.(*persistConn).readLoop(0xc000714900)
+	/opt/go/1.18.5/src/net/http/transport.go:2213 +0xd99
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1750 +0x173e
+
+goroutine 202 [select, 1197 minutes]:
+net/http.(*persistConn).readLoop(0xc00057c6c0)
+	/opt/go/1.18.5/src/net/http/transport.go:2213 +0xd99
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1750 +0x173e
+
+goroutine 219 [select, 1197 minutes]:
+net/http.(*persistConn).readLoop(0xc0007145a0)
+	/opt/go/1.18.5/src/net/http/transport.go:2213 +0xd99
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1750 +0x173e
+
+goroutine 220 [select, 1197 minutes]:
+net/http.(*persistConn).writeLoop(0xc0007145a0)
+	/opt/go/1.18.5/src/net/http/transport.go:2392 +0xf5
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1751 +0x1791
+
+goroutine 258 [select, 1191 minutes]:
+net/http.(*persistConn).writeLoop(0xc00057c900)
+	/opt/go/1.18.5/src/net/http/transport.go:2392 +0xf5
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1751 +0x1791
+
+goroutine 231 [select, 1191 minutes]:
+net/http.(*persistConn).writeLoop(0xc000714900)
+	/opt/go/1.18.5/src/net/http/transport.go:2392 +0xf5
+created by net/http.(*Transport).dialConn
+	/opt/go/1.18.5/src/net/http/transport.go:1751 +0x1791
+{"ts":1795078526611,"crit":"INFO","id":"submgr","mdc":{"time":"2026-11-19T08:55:26"},"msg":"Using config file: /opt/config/submgr-config.yaml"}
+{"ts":1795078526612,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Serving metrics on: url=/ric/v1/metrics namespace="}
+redis: got 7 elements in COMMAND reply, wanted 6
+{"ts":1795078526616,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SDL Stored The total number of stored SDL transactions map[]}"}
+{"ts":1795078526616,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SDL StoreError The total number of SDL store errors map[]}"}
+redis: got 7 elements in COMMAND reply, wanted 6
+{"ts":1795078526618,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"SUBMGR"}
+redis: got 7 elements in COMMAND reply, wanted 6
+redis: got 7 elements in COMMAND reply, wanted 6
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubReqFromXapp The total number of SubscriptionRequest messages received from xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubRespToXapp The total number of SubscriptionResponse messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubFailToXapp The total number of SubscriptionFailure messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestSubReqFromXapp The total number of Rest SubscriptionRequest messages received from xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestSubRespToXapp The total number of Rest SubscriptionResponse messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestSubFailToXapp The total number of Rest SubscriptionFailure messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestReqRejDueE2Down The total number of Rest SubscriptionRequest messages rejected due E2 Interface down map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestSubNotifToXapp The total number of successful Rest SubscriptionNotification messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestSubFailNotifToXapp The total number of failure Rest SubscriptionNotification messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubReqToE2 The total number of SubscriptionRequest messages sent to E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubReReqToE2 The total number of SubscriptionRequest messages resent to E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR PartialSubRespFromE2 The total number of partial SubscriptionResponse messages from E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubRespFromE2 The total number of SubscriptionResponse messages from E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubFailFromE2 The total number of SubscriptionFailure messages from E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubReqTimerExpiry The total number of SubscriptionRequest timer expires map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RouteCreateFail The total number of subscription route create failure map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RouteCreateUpdateFail The total number of subscription route create update failure map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR MergedSubscriptions The total number of merged Subscriptions map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR DuplicateE2SubReq The total number of same E2 SubscriptionRequest messages from same xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubDelReqFromXapp The total number of SubscriptionDeleteRequest messages received from xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubDelRespToXapp The total number of SubscriptionDeleteResponse messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestSubDelReqFromXapp The total number of Rest SubscriptionDeleteRequest messages received from xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestSubDelRespToXapp The total number of Rest SubscriptionDeleteResponse messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RestSubDelFailToXapp The total number of Rest SubscriptionDeleteFailure messages sent to xApp map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubDelReqToE2 The total number of SubscriptionDeleteRequest messages sent to E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubDelReReqToE2 The total number of SubscriptionDeleteRequest messages resent to E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubDelRespFromE2 The total number of SubscriptionDeleteResponse messages from E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubDelFailFromE2 The total number of SubscriptionDeleteFailure messages from E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubDelReqTimerExpiry The total number of SubscriptionDeleteRequest timer expires map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SubDelRequiredFromE2 The total number of SubscriptionDeleteRequired messages from E2Term map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RouteDeleteFail The total number of subscription route delete failure map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR RouteDeleteUpdateFail The total number of subscription route delete update failure map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR UnmergedSubscriptions The total number of unmerged Subscriptions map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SDLWriteFailure The total number of SDL write failures map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SDLReadFailure The total number of SDL read failures map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR SDLRemoveFailure The total number of SDL remove failures map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR E2StateChangedToUp The total number of E2 interface change connected state map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR E2StateChangedToDown The total number of E2 interface change disconnected state map[]}"}
+{"ts":1795078526622,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { SUBMGR E2StateChangedToUnderReset The total number of E2 interface change under reset state map[]}"}
+{"ts":1795078526623,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"ReadE2ConfigurationFromRnib()"}
+{"ts":1795078526625,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"NodeB['gnbd_001_001_000259_0'] connection status = 1"}
+{"ts":1795078526625,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"E2 connection CONNECTED: gnbd_001_001_000259_0"}
+{"ts":1795078526625,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"NodeB['gnbd_001_001_0001f6_0'] connection status = 2"}
+{"ts":1795078526625,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"NodeB['gnb_0115_100_00019c'] connection status = 2"}
+{"ts":1795078526625,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"NodeB['gnb_0115_100_00025b'] connection status = 2"}
+{"ts":1795078526625,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"NodeB['gnbd_001_001_00025a_0'] connection status = 1"}
+{"ts":1795078526625,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"E2 connection CONNECTED: gnbd_001_001_00025a_0"}
+{"ts":1795078526625,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"NodeB['gnbd_001_001_0001f5_0'] connection status = 2"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"NodeB['gnbd_001_001_00019b_0'] connection status = 2"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"NodeB['gnb_0115_100_00019b'] connection status = 2"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Subscription to RAN state changes done!"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"ReadConfigParameters"}
+{"ts":1795078526626,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"LoggerLevel = 4"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"e2tSubReqTimeout= 2s"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"e2tSubDelReqTime= 2s"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"e2tRecvMsgTimeout= 2s"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"e2tMaxSubReqTryCount= 2"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"e2tMaxSubDelReqTryCount= 2"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"checkE2State= true"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"readSubsFromDb= true"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"dbTryCount= 200"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"dbRetryForever= true"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"WARNING: Using hard coded default value for waitRouteCleanup_ms"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"waitRouteCleanup= 5s"}
+{"ts":1795078526626,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"e2IEOrderCheck= 1"}
+{"ts":1795078526627,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Reading E2 subscriptions from db"}
+{"ts":1795078526631,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"ReadRESTSubscriptions()"}
+{"ts":1795078526631,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Reading REST subscriptions from db"}
+{"ts":1795078526631,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"HandleUncompletedSubscriptions. len(register) = 2"}
+{"ts":1795078526631,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"SDL: Subscription written in restSubsDb. restSubId = 3MH9AjVDVfvLFcnvLm4D0QcBSHi"}
+{"ts":1795078526631,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"SDL: Subscription written in restSubsDb. restSubId = 3MH9AzMiJGCfO3e9NWNg2medbyR"}
+1795078526632 1/RMR [INFO] ric message routing library on SI95 p=4560 mv=3 flg=00 id=a (f447e29 4.9.4 built: Dec 13 2023)
+{"ts":1795078526634,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Serving subscriptions on 0.0.0.0:8088\n"}
+{"ts":1795078526635,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"new rmrClient with parameters: ProtPort=4560 MaxSize=8192 ThreadType=0 StatDesc=RMR LowLatency=false FastAck=false Policies=[]"}
+{"ts":1795078526635,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { RMR Transmitted The total number of transmited RMR messages map[]}"}
+{"ts":1795078526635,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { RMR TransmitError The total number of RMR transmission errors map[]}"}
+{"ts":1795078526635,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { RMR TransmitRetry The total number of transmit retries on failure map[]}"}
+{"ts":1795078526635,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { RMR Received The total number of received RMR messages map[]}"}
+{"ts":1795078526635,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { RMR ReceiveError The total number of RMR receive errors map[]}"}
+{"ts":1795078526635,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new counter with opts: { RMR SendWithRetryRetry SendWithRetry service retries map[]}"}
+{"ts":1795078526635,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new gauge with opts: { RMR Enqueued The total number of enqueued in RMR library map[]}"}
+{"ts":1795078526635,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Register new gauge with opts: { RMR Dropped The total number of dropped in RMR library map[]}"}
+{"ts":1795078526635,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"IP address is not able to resolve Interface () route ip+net: invalid network interface name"}
+{"ts":1795078526635,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Xapp started, listening on: :8080"}
+{"ts":1795078526635,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"Connection to database established!"}
+{"ts":1795078526635,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:26"},"msg":"rmrClient: Waiting for RMR to be ready ..."}
+2026/11/19 08:55:26 Serving xapp framework at http://[::]:8088
+{"ts":1795078527636,"crit":"INFO","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:27"},"msg":"rmrClient: RMR is ready after 1 seconds waiting..."}
+RMR is ready now ...
+{"ts":1795078531637,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:31"},"msg":"Application='submgr' is not ready yet, waiting ..."}
+{"ts":1795078536637,"crit":"DEBUG","id":"submgr","mdc":{"CONTAINER_NAME":"ric_submgr","HOST_NAME":"ric_submgr_host","PID":"1","POD_NAME":"submgr_pod","SERVICE_NAME":"ric_submgr_service","SYSTEM_NAME":"oran_sc_ric","time":"2026-11-19T08:55:36"},"msg":"Application='submgr' is not ready yet, waiting ..."}

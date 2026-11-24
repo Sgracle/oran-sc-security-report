@@ -31,6 +31,19 @@ O-RAN SC 安全研究与协调披露材料，按问题分别归档。整理日�
 | [sub02-registry-lock-bypass](sub02-registry-lock-bypass/README.md) | ric-plt-submgr | CWE-362 | CONFIRMED | 断连清理绕过注册表锁 |
 | [sub03-test-exit-route](sub03-test-exit-route/README.md) | ric-plt-submgr | CWE-489 | CONFIRMED | 生产启动注册测试路由，命中即 `os.Exit(1)` |
 
+### Submgr RMR 未认证崩溃（真实组件实测，2026-11-19）
+
+| 目录 | 组件 | CWE | 结论 | 类型 |
+|---|---|---|---|---|
+| [submgr-rmr-crash](submgr-rmr-crash/README.md) | ric-plt-submgr 0.10.1（真实容器） | CWE-20 | CONFIRMED（两次独立复现） | 未认证 RMR 消息致 SIGSEGV 进程崩溃，未认证远程 DoS |
+
+该发现来自 C1（跨节点订阅删除）真实组件验证过程：向 submgr 的 RMR 端口（tcp:4560）
+注入 350 字节伪造消息（合法 E2AP 载荷 + 正确 RMR 头），submgr 在 xapp-frame 的
+`parseMessage`（rmr.go:305）处 SIGSEGV 崩溃退出。无需认证、单条消息即崩溃，
+崩溃 PC 两次完全一致（0xa3e886）。注意：崩溃发生在框架层解析阶段，
+**未进入** `handleE2TSubscriptionDeleteRequired` 业务逻辑——C1 跨节点删除场景
+的 L3 端到端验证因此未完成（L1 逻辑复现与规范依据仍有效）。
+
 证据强度：Go 项在真实上游源码树内以 `go test -race` 验证，并发项均取得 Go runtime 原生
 `fatal error`（进程级、非概率性）证据；C 项以复刻生产函数体与宏的隔离程序验证，GCC 直跑 +
 ASan/LSan 双证据。静态审查中尚未实测的候选（E2-01、DU-01、DU-02）未归档，见根级报告附录 A。
@@ -89,6 +102,8 @@ sub02-registry-lock-bypass/              submgr 断连清理绕过注册表锁
   README.md REPRODUCTION.md crash_sub02_test.go
 sub03-test-exit-route/                   submgr 生产暴露测试退出入口
   README.md REPRODUCTION.md crash_sub03_test.go
+submgr-rmr-crash/                        submgr 未认证 RMR 消息致 SIGSEGV 崩溃（2026-11-19 实测）
+  README.md REPRODUCTION.md rmr_inject.go evidence/
 crash-validation-20261106.md             Crash Validation 根级报告（CVE 说明 + 复现记录）
 REORGANIZATION.md                        路径迁移及证据完整性说明
 ```
